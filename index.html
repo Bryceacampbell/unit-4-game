@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+    <header class="jumbotron text-center">
+        <h1>Crystal Collector</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below with hidden values. By clicking on a crystal, the crystals hidden value
+                    will be added to your total points.(These values are subject to change every round.</p>
+                <p>You win the game if your total points match the random number generated. You lose if you go above the
+                    random number generated.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-3">
+                <h2>Number to Guess</h2>
+                <h3 id="target-number">0</h3>
+            </div>
+            <div class="col-3">
+                <h2>Total Score</h2>
+                <h3 id="total-score-counter">0</h3>
+            </div>
+            <div class="col-3">
+                <h2>Wins</h2>
+                <h3 id="wins-counter">0</h3>
+            </div>
+            <div class="col-3">
+                <h2>losses</h2>
+                <h3 id="losses-counter">0</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <img src="/assets/images/ruby.png" alt="crystal number 1" class="img-fluid crystal-image" id="crystal-1">
+            </div>
+            <div class="col-3">
+                <img src="/assets/images/ruby.png" alt="crystal number 2" class="img-fluid crystal-image" id="crystal-2">
+            </div>
+            <div class="col-3">
+                <img src="/assets/images/ruby.png" alt="crystal number 3" class="img-fluid crystal-image" id="crystal-3">
+            </div>
+            <div class="col-3">
+                <img src="/assets/images/ruby.png" alt="crystal number 4" class="img-fluid crystal-image" id="crystal-4">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
