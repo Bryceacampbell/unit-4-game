@@ -4,12 +4,12 @@ var losses = 0;
 
 $(document).ready(function () {
 
-    
+
     var targetNumber = Math.floor(Math.random() * 102) + 19;
     $("#target-number").text(targetNumber);
     attachCrystalValues();
 
-    $(".crystal-image").on("click", function() {
+    $(".crystal-image").on("click", function () {
 
         var crystalValue = ($(this).attr("data-crystalvalue"));
         crystalValue = parseInt(crystalValue);
@@ -22,15 +22,19 @@ $(document).ready(function () {
             totalScore = 0;
             $("#total-score-counter").text(totalScore);
             attachCrystalValues();
-          }
+            targetNumber = Math.floor(Math.random() * 102) + 19;
+            $("#target-number").text(targetNumber);
+        }
 
-          else if (totalScore >= targetNumber) {
+        else if (totalScore >= targetNumber) {
             losses++;
             $("#losses-counter").text(losses);
             totalScore = 0;
             $("#total-score-counter").text(totalScore);
             attachCrystalValues();
-          }
+            targetNumber = Math.floor(Math.random() * 102) + 19;
+            $("#target-number").text(targetNumber);
+        }
     });
 });
 
@@ -39,7 +43,7 @@ var crystalValue = function () {
 }
 
 //string interpolation 
-function attachCrystalValues(){
+function attachCrystalValues() {
     for (let index = 1; index < 5; index++) {
         $(`#crystal-${index}`).attr("data-crystalvalue", crystalValue());
     }
