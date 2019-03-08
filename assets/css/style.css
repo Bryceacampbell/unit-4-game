@@ -1,10 +1,29 @@
+body {
+    background-color: #72A7A3;
+}
 .jumbotron {
     padding: 20px;
+    background: #15384F;
+    color: #E4F2E1;
+    font-family: 'Luckiest Guy', cursive;
 }
-
 .directions-text {
-    background: bisque;
+    background: #E4F2E1;
     padding: 20px;
     font-size: 22px;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    color: #E4F2E1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+h3 {
+    color: #15384F;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+}
+.img-container {
+    margin-top: 20px;
 }
